@@ -2,8 +2,7 @@ const os = require("os");
 const io = require("socket.io-client");
 const { machineIdSync } = require("node-machine-id");
 
-const SERVER_URL =
-  process.env.MONITOR_SERVER || "https://9wnk9wc1-3000.euw.devtunnels.ms/";
+const SERVER_URL = process.env.MONITOR_SERVER || "http://localhost:3000";
 const AUTH_KEY = process.env.MONITOR_KEY || "agent-handshake-key";
 const TICK_RATE = parseInt(process.env.TICK_RATE, 10) || 1000;
 
